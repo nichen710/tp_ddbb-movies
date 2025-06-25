@@ -8,6 +8,7 @@ from .movie import (
 
 # Rebuild models to resolve forward references after all imports
 MovieCreate.model_rebuild()
+MovieUpdate.model_rebuild()
 MovieResponse.model_rebuild()
 
 # Make schemas available at the package level
