@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mejores placeholders y textos más visibles */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #6b7280; /* gray-500 - más oscuro que el default */
+  opacity: 1;
+}
+
+/* Texto de labels y campos más contrastado */
+label {
+  color: #374151; /* gray-700 - más oscuro */
+}
+
+/* Mejorar contraste general de texto */
+.text-gray-600 {
+  color: #4b5563 !important; /* gray-600 más oscuro */
+}
+
+.text-gray-500 {
+  color: #6b7280 !important; /* gray-500 más oscuro */
+}
