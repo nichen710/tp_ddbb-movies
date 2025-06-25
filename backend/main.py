@@ -62,8 +62,8 @@ app.add_middleware(
 def root():
     """API root endpoint"""
     return {
-        "message": f"Welcome to the {settings.API_TITLE}!",
-        "version": settings.API_VERSION,
+        "message": f"Welcome to the Movie API!",
+        "version": "2.0.0",
         "features": [
             "Complete movie management",
             "Genre associations",
